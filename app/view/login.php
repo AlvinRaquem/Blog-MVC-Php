@@ -1,8 +1,4 @@
-<?php
-
-include __DIR__.'./includes/header.php';
-
-?>
+<?php include __DIR__.'./includes/header.php';?>
 
 
 <div id="mainContent">
@@ -19,6 +15,8 @@ include __DIR__.'./includes/header.php';
 		<input type="submit" name="submit" class="btn-success" value="LOGIN">
 	</form>
 </div>
+
+<?php include __DIR__.'./includes/footer.php';?>
 
 </body>
 </html>
