@@ -5,17 +5,23 @@ namespace controller;
 use base\controller;
 use model\blog;
 use helper\input;
+use helper\session;
 
 Class blogcontroller extends controller {
 
 	public function __construct(){
 		parent::__construct(new blog);
+		// session::set("test","test");
+		// echo session::get("test");
+
 	}
 
 	public function index(){
 		$sql = "SELECT * FROM blog";
 		$blogs = $this->model->getAll($sql);
-		return $this->view->make("index",compact('blogs',$blogs));
+		$array222 = [1,2,3,4,5,6,7,8,9];
+		$params = ['blogs'=>$blogs,'array222'=>$array222];
+		return $this->view->make("index",$params);
 	}
 
 	public function add(){
@@ -25,7 +31,8 @@ Class blogcontroller extends controller {
 	public function view(){
 		$idno = input::get('idno');
 		$blog = $this->model->getBlog($idno);
-		return $this->view->make("view",compact("blog",$blog));
+		$params = ['blog'=>$blog];
+		return $this->view->make("view",$params);
 	}
 
 	public function remove($id){

@@ -29,6 +29,10 @@ Class Database {
 		return $this->conn;
 	}
 
+	public function ChangeConnection(){
+
+	}
+
 	public function Disconnect(){
 		$this->conn = NULL;
 	}

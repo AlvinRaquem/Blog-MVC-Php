@@ -4,12 +4,10 @@ namespace base;
 
 use helper\database;
 
-Class model {
-	private $conn;
+Class model extends database{
 
 	public function __construct(){
-		$db = new database;
-		$this->conn = $db->connectDB();
+		parent::__construct();
 	}
 
 	protected function ExecuteQuery($sql,$params = []){

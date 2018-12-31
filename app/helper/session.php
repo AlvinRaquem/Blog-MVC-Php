@@ -11,12 +11,16 @@ class session {
 
 
 	public function set($key,$val){
-		return $_SESSION[$key] = $val;
+	  	$_SESSION[$key] = $val;
+	}
+
+	public function get($key){
+		return $_SESSION[$key];
 	}
 
 
-	public function unsert($key){
-		return unset($_SESSION[$key]);
+	public function unset($key){
+		 unset($_SESSION[$key]);
 	}
 
 

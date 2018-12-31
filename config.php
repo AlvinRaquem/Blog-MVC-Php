@@ -4,8 +4,9 @@ $configs = [
 	'app' => [
 		'APP_NAME' => '',
 		'APP_PATH' => __DIR__.'/app/',
+		'BASE_PATH' => __DIR__.'/app/base/',
 		'VIEW_PATH' => __DIR__.'/app/view/',
-		'ROOT_PATH' => '/mvc',
+		'ROOT_PATH' => '/blog_mvc',
 
 	],
 
@@ -15,6 +16,12 @@ $configs = [
 		'DB_PASS' => '',
 		'DB_NAME' => 'simpleblog',
 		'DB_CHARSET' => 'utf8',
+		'DB_CONNECTION_TYPE' => 'pdo',
+
+		// note DB_CONNECTION_TYPE
+		// mysqli
+		// mssql
+		// pdo
 
 	],
 
