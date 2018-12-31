@@ -52,6 +52,6 @@ Route::make('about',function(){
 	exit;
 });
 
-// if url is not in list will display this view
+// if url is not in list, it will display this view
 view::make('notexist');
 
