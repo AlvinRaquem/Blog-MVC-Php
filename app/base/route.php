@@ -12,9 +12,7 @@ class route {
 		self::$validroutes[]=$route;
 
 		if($_GET['url']==$route){
-				$function->__invoke();
-		}else{
-			view::make("notexist");
+			$function->__invoke();
 		}
 		
 	}
