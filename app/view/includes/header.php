@@ -6,8 +6,8 @@
 <html>
 <head>
 	<title>BLOG</title>
-	<link rel="stylesheet" type="text/css" href="./public/css/style.css">
-	<link rel="stylesheet" type="text/css" href="./public/css/login.css">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<link rel="stylesheet" type="text/css" href="public/css/login.css">
 </head>
 <body>
 
